@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UN: The 17 Sustainable Development Goals</title>
+	<style>
+	header {
+      width: 100vw;
+      height: 100vh;
+      height: 500px;
+      background-image: url('SDG_LOGO_WITH_UN_EMBLEM.png');
+      background-repeat: no-repeat;
+      background-position: center;
+	  background-size: contain;
+	  background-color: white;
+    }
+	
+	.navigation {
+      position: sticky;
+      top: 0;
+      list-style-type: none;
+      margin: 0;
+      padding: 10px;
+      overflow: hidden;
+      background-color: white;
+      z-index: 999;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .navigation li {
+      display: inline-block;
+    }
+
+    li a {
+      display: flex;
+      align-items: center;
+      color: white;
+      background-color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      background-color: #009dda;
+    }
+
+    li a img.nav-icon {
+      width: 20px;
+      height: 20px;
+    }
+
+    .active {
+      background-color: #009dda;
+    }
+	
+	body{
+		font-family: 'Times New Roman', Times, serif;
+		background-color: white;
+		margin: 0;
+		padding: 20px;
+	}
+	
+	.grid-container{
+		display: grid;
+		grid-template-columns: repeat(4,1fr);
+		gap: 30px;
+		justify-items: center;
+		margin-top: 20px;
+	}
+	
+	.sdg-item{
+		width: 100%;
+		text-align: center;
+		max-width: 200px;
+	}
+	
+	.sdg-item input[type="checkbox"]{
+		display: none;
+	}
+	
+	.sdg-item label{
+		display: block;
+		cursor: pointer;
+	}
+	
+	.sdg-item img{
+		width: 100%;
+		height: auto;
+		border-radius: 10px;
+		border: 2px solid #ccc;
+		transition: transform 0.2s;
+	}
+	
+	.sdg-item img:hover{
+		transform: scale(1.05);
+	}
+	
+	.description{
+		display: none;
+		border-radius: 8px;
+		font-size: 14px;
+		margin-top: 10px;
+		background-color: #f5f5f5;
+		padding: 10px;
+	}
+	
+	.sdg-item input[type="checkbox"]:checked~ .description{
+		display: block;
+	}
+	
+	main {
+      background-color: #f5f5f5;
+      margin: 30px auto;
+      padding: 50px 40px;
+      max-width: 900px;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+	
+	.image-toggle-container{
+		display: inline-block;
+		text-align: center;
+	}
+	
+	.image-toggle-container input[type="checkbox"] {
+      display: none;
+    }
+
+    .image-toggle-container label {
+      cursor: pointer;
+      display: block;
+    }
+
+    .image-toggle-container img {
+      width: 200px;
+      height: auto;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+    }
+
+    .image-toggle-container input[type="checkbox"]:checked ~ .description {
+      display: block;
+    }
+	
+	dl {
+      display: inline-block;
+      text-align: left;
+      margin-top: 15px;
+    }
+
+    dt {
+      font-weight: bold;
+    }
+
+    dd {
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+	</style>
+</head>
+
+<body>
+
+<header></header>
+
+<ul class="navigation">
+  <li><a href="../homepage.html" title="Home"><img src="home.png" alt="Home Icon" class="nav-icon"></a></li>
+  <li><a href="#news"><img src="news.png" alt="News Icon" class="nav-icon" title="News"></a></li>
+  <li><a href="#about"><img src="about-us.png" alt="About Icon" class="nav-icon" title="About"></a></li>
+  <li><a href="#Resources"><img src="resources.png" alt="Resources Icon" class="nav-icon" title="Resources"></a></li>
+</ul>
+
+<main>
+
+<div class="grid-container">
+	<div class="sdg-item">
+		<input type="checkbox" id="sdg1">
+		<label for="sdg1">
+			<img src="SDG-Icons/SDG-Icons-WEB/E-WEB-Goal-01.png" alt="SDG 1">
+		</label>
+		<dl class="description">
+			<dt>Goal:</dt>
+				<dd>End poverty in all its forms everywhere.</dd>
+				<dd><a href="#SDG1">More Information</a></dd>
+		</dl>
+	</div>
+		
+	<div class="sdg-item">
+		<input type="checkbox" id="sdg2">
+		<label for="sdg2">
+			<img src="SDG-Icons/SDG-Icons-WEB/E-WEB-Goal-02.png" alt="SDG 2">
+		</label>
+		<dl class="description">
+			<dt>Goal:</dt>
+				<dd>End hunger, achieve food security and improved nutrition and promote sustainable agriculture.</dd>
+				<dd><a href="#SDG2">More Information</a></dd>
+		</dl>
+	</div>
+		
+	<div class="sdg-item">
+		<input type="checkbox" id="sdg3">
+		<label for="sdg3">
+			<img src="SDG-Icons/SDG-Icons-WEB/E-WEB-Goal-03.png" alt="SDG 3">
+		</label>
+		<dl class="description">
+			<dt>Goal:</dt>
+				<dd>Ensure healthy lives and promote well-being for all at all ages.</dd>
+				<dd><a href="#SDG3">More Information</a></dd>
+		</dl>
+	</div>
+		
+	<div class="sdg-item">
+		<input type="checkbox" id="sdg4">
+		<label for="sdg4">
+			<img src="SDG-Icons/SDG-Icons-WEB/E-WEB-Goal-04.png" alt="SDG 4">
+		</label>
+		<dl class="description">
+			<dt>Goal:</dt>
+				<dd>Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all.</dd>
+				<dd><a href="#SDG4">More Information</a></dd>
+		</dl>
+	</div>
+</div>
+
+<div class="grid-container">
+	<div class="sdg-item">
+		<input type="checkbox" id="sdg5">
+		<label for="sdg5">
+			<img src="SDG-Icons/SDG-Icons-WEB/E-WEB-Goal-05.png" alt="SDG 5">
+		</label>
+		<dl class="description">
+			<dt>Goal:</dt>
+				<dd>Achieve gender equality and empower all women and girls.</dd>
+				<dd><a href="#SDG5">More Information</a></dd>
+		</dl>
+	</div>
+		
+	<div class="sdg-item">
+		<input type="checkbox" id="sdg6">
+		<label for="sdg6">
+			<img src="SDG-Icons/SDG-Icons-WEB/E-WEB-Goal-06.png" alt="SDG 6">
+		</label>
+		<dl class="description">
+			<dt>Goal:</dt>
+				<dd>Ensure availability and sustainable management of water and sanitation for all.</dd>
+				<dd><a href="#SDG6">More Information</a></dd>
+		</dl>
+	</div>
+		
+	<div class="sdg-item">
+		<input type="checkbox" id="sdg7">
+		<label for="sdg7">
+			<img src="SDG-Icons/SDG-Icons-WEB/E-WEB-Goal-07.png" alt="SDG 7">
+		</label>
+		<dl class="description">
+			<dt>Goal:</dt>
+				<dd>Ensure access to affordable, reliable, sustainable and modern energy for all</dd>
+				<dd><a href="#SDG7">More Information</a></dd>
+		</dl>
+	</div>
+		
+	<div class="sdg-item">
+		<input type="checkbox" id="sdg8">
+		<label for="sdg8">
+			<img src="SDG-Icons/SDG-Icons-WEB/E-WEB-Goal-08.png" alt="SDG 8">
+		</label>
+		<dl class="description">
+			<dt>Goal:</dt>
+				<dd>Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all.</dd>
+				<dd><a href="#SDG8">More Information</a></dd>
+		</dl>
+	</div>
+</div>
+
+<div class="grid-container">
+	<div class="sdg-item">
+		<input type="checkbox" id="sdg9">
+		<label for="sdg9">
+			<img src="SDG-Icons/SDG-Icons-WEB/E-WEB-Goal-09.png" alt="SDG 9">
+		</label>
+		<dl class="description">
+			<dt>Goal:</dt>
+				<dd>Build resilient infrastructure, promote inclusive and sustainable industrialization and foster innovation.</dd>
+				<dd><a href="#SDG9">More Information</a></dd>
+		</dl>
+	</div>
+		
+	<div class="sdg-item">
+		<input type="checkbox" id="sdg10">
+		<label for="sdg10">
+			<img src="SDG-Icons/SDG-Icons-WEB/E-WEB-Goal-10.png" alt="SDG 10">
+		</label>
+		<dl class="description">
+			<dt>Goal:</dt>
+				<dd>Reduce inequality within and among countries.</dd>
+				<dd><a href="#SDG10">More Information</a></dd>
+		</dl>
+	</div>
+		
+	<div class="sdg-item">
+		<input type="checkbox" id="sdg11">
+		<label for="sdg11">
+			<img src="SDG-Icons/SDG-Icons-WEB/E-WEB-Goal-11.png" alt="SDG 11">
+		</label>
+		<dl class="description">
+			<dt>Goal:</dt>
+				<dd>Make cities and human settlements inclusive, safe, resilient and sustainable.</dd>
+				<dd><a href="IT0043L_LA2_P1.html">More Information</a></dd>
+		</dl>
+	</div>
+		
+	<div class="sdg-item">
+		<input type="checkbox" id="sdg12">
+		<label for="sdg12">
+			<img src="SDG-Icons/SDG-Icons-WEB/E-WEB-Goal-12.png" alt="SDG 12">
+		</label>
+		<dl class="description">
+			<dt>Goal:</dt>
+				<dd>Ensure sustainable consumption and production patterns.</dd>
+				<dd><a href="#SDG12">More Information</a></dd>
+		</dl>
+	</div>
+</div>
+
+<div class="grid-container">
+	<div class="sdg-item">
+		<input type="checkbox" id="sdg13">
+		<label for="sdg13">
+			<img src="SDG-Icons/SDG-Icons-WEB/E-WEB-Goal-13.png" alt="SDG 13">
+		</label>
+		<dl class="description">
+			<dt>Goal:</dt>
+				<dd>Take urgent action to combat climate change and its impacts.</dd>
+				<dd><a href="#SDG13">More Information</a></dd>
+		</dl>
+	</div>
+		
+	<div class="sdg-item">
+		<input type="checkbox" id="sdg14">
+		<label for="sdg14">
+			<img src="SDG-Icons/SDG-Icons-WEB/E-WEB-Goal-14.png" alt="SDG 14">
+		</label>
+		<dl class="description">
+			<dt>Goal:</dt>
+				<dd>Conserve and sustainably use the oceans, seas and marine resources for sustainable development.</dd>
+				<dd><a href="#SDG14">More Information</a></dd>
+		</dl>
+	</div>
+		
+	<div class="sdg-item">
+		<input type="checkbox" id="sdg15">
+		<label for="sdg15">
+			<img src="SDG-Icons/SDG-Icons-WEB/E-WEB-Goal-15.png" alt="SDG 15">
+		</label>
+		<dl class="description">
+			<dt>Goal:</dt>
+				<dd>Protect, restore and promote sustainable use of terrestrial ecosystems, sustainably manage forests, combat desertification, and halt and reverse land degradation and halt biodiversity loss.</dd>
+				<dd><a href="#SDG15">More Information</a></dd>
+		</dl>
+	</div>
+		
+	<div class="sdg-item">
+		<input type="checkbox" id="sdg16">
+		<label for="sdg16">
+			<img src="SDG-Icons/SDG-Icons-WEB/E-WEB-Goal-16.png" alt="SDG 16">
+		</label>
+		<dl class="description">
+			<dt>Goal:</dt>
+				<dd>Promote peaceful and inclusive societies for sustainable development, provide access to justice for all and build effective, accountable and inclusive institutions at all levels.</dd>
+				<dd><a href="#SDG16">More Information</a></dd>
+		</dl>
+	</div>
+</div>
+
+<div class="grid-container">
+	<div class="sdg-item">
+		<input type="checkbox" id="sdg17">
+		<label for="sdg17">
+			<img src="SDG-Icons/SDG-Icons-WEB/E-WEB-Goal-17.png" alt="SDG 17">
+		</label>
+		<dl class="description">
+			<dt>Goal:</dt>
+				<dd>Strengthen the means of implementation and revitalize the Global Partnership for Sustainable Development.</dd>
+				<dd><a href="#SDG17">More Information</a></dd>
+		</dl>
+	</div>
+</div>
+
+</main>
+
+</body>
+</html>
+
+

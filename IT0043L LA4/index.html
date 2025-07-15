@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SDG Registration Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css ">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header></header>
+    <div class="navigation">
+        <a href="#"><i class="fas fa-home"></i>Home</a>
+        <a href="#"><i class="fas fa-newspaper"></i>News</a>
+        <a href="#"><i class="fas fa-info-circle"></i>About</a>
+        <a href="#"><i class="fas fa-search"></i>Search</a>
+    </div>
+
+    <div class="form-container">
+        <div class="form-box">
+
+            <div class="form-image">
+                <img src="sdgs.jpg" alt="Sustainable Development Goals">
+            </div>
+
+            <div class="form-content">
+                <h1>Registration Form on the United Nations' Sustainable Development Goals</h1>
+                <p>
+                    This is a registration form that will capture which Sustainable Development Goals (SDGs) you are interested in.
+                    Please fill out the form below and check the boxes of the SDGs that interest you.
+                </p>
+
+
+                <form action="/submit-form" method="POST"><! POST is safer than GET>
+
+
+                    <div class="input-group">
+                        <label for="fullname"><i class="fas fa-user"></i> Full Name:</label><br>
+                        <input type="text" id="fullname" name="fullname" required>
+                    </div>
+
+
+                    <div class="input-group">
+                        <label for="email"><i class="fas fa-envelope"></i> Email:</label><br>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+
+                    <div class="input-group">
+                        <label for="age"><i class="fas fa-calendar-alt"></i> Age:</label><br>
+                        <input type="number" id="age" name="age" required>
+                    </div>
+
+
+                    <div class="input-group">
+                        <label><i class="fas fa-venus-mars"></i> Gender:</label><br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label><br>
+
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label><br>
+
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label><br>
+
+                        <input type="radio" id="pnts" name="gender" value="prefer_not_to_say">
+                        <label for="pnts">Prefer not to say</label><br>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Select which SDGs you are interested in:</label><br>
+                        <div class="checkbox-scroll">
+                            <label><input type="checkbox" name="sdg[]" value="No Poverty"> SDG 1: No Poverty</label><br>
+                            <label><input type="checkbox" name="sdg[]" value="Zero Hunger"> SDG 2: Zero Hunger</label><br>
+                            <label><input type="checkbox" name="sdg[]" value="Good Health and Well-being"> SDG 3: Good Health and Well-being</label><br>
+                            <label><input type="checkbox" name="sdg[]" value="Quality Education"> SDG 4: Quality Education</label><br>
+                            <label><input type="checkbox" name="sdg[]" value="Gender Equality"> SDG 5: Gender Equality</label><br>
+                            <label><input type="checkbox" name="sdg[]" value="Clean Water and Sanitation"> SDG 6: Clean Water and Sanitation</label><br>
+                            <label><input type="checkbox" name="sdg[]" value="Affordable and Clean Energy"> SDG 7: Affordable and Clean Energy</label><br>
+                            <label><input type="checkbox" name="sdg[]" value="Decent Work and Economic Growth"> SDG 8: Decent Work and Economic Growth</label><br>
+                            <label><input type="checkbox" name="sdg[]" value="Industry, Innovation, and Infrastructure"> SDG 9: Industry, Innovation, and Infrastructure</label><br>
+                            <label><input type="checkbox" name="sdg[]" value="Reduce Inequalities"> SDG 10: Reduce Inequalities</label><br>
+                            <label><input type="checkbox" name="sdg[]" value="Sustainable Cities and Communities"> SDG 11: Sustainable Cities and Communities</label><br>
+                            <label><input type="checkbox" name="sdg[]" value="Responsible Consumption and Production"> SDG 12: Responsible Consumption and Production</label><br>
+                            <label><input type="checkbox" name="sdg[]" value="Climate Action"> SDG 13: Climate Action</label><br>
+                            <label><input type="checkbox" name="sdg[]" value="Life Below Water"> SDG 14: Life Below Water</label><br>
+                            <label><input type="checkbox" name="sdg[]" value="Life on Land"> SDG 15: Life on Land</label><br>
+                            <label><input type="checkbox" name="sdg[]" value="Peace, Justice, and Strong Institutions"> SDG 16: Peace, Justice, and Strong Institutions</label><br>
+                            <label><input type="checkbox" name="sdg[]" value="Partnerships for the Goals"> SDG 17: Partnerships for the Goals</label><br>
+                        </div>
+                    </div>
+
+                    <button type="submit">Submit</button>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+

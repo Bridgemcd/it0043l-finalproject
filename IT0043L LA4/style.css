@@ -1,0 +1,151 @@
+	header {
+      width: 100vw;
+      height: 100vh;
+      height: 500px;
+      background-image: url('SDG_LOGO_WITH_UN_EMBLEM.png');
+      background-repeat: no-repeat;
+      background-position: center;
+	  background-size: contain;
+	  background-color: white;
+    }
+	body {
+		font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+		background-color: #f7f7f7;
+		margin: 0;
+		padding: 20px;
+	}
+
+	.navigation {
+		display: flex;
+		justify-content: flex-end;
+		gap: 20px;
+		background-color: #009dda;
+		padding: 10px 0;
+		border-radius: 8px;
+		margin-bottom: 30px;
+		position: sticky;
+		top: 0;
+		z-index: 1000;
+		box-shadow; 0 2px 5px rgba (0,0,0,0.2);
+	
+	}
+
+	.navigation a {
+		color: white;
+		text-decoration: none;
+		font-size: 16px;
+		display: flex;
+		align-items: center;
+		transition: color 0.3s ease;
+	}
+
+	.navigation a:hover {
+		color: #007BFF;
+	}
+
+	.form-container {
+		max-width: 1100px;
+		margin: 0 auto;
+		background-color: white;
+		border-radius: 15px;
+		box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+		overflow: hidden;
+	}
+
+	.form-box {
+		display: flex;
+		flex-direction: row;
+		gap: 20px;
+	}
+
+	.form-image {
+		flex: 1;
+		padding: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #f0f0f0;
+	}
+
+	.form-image img {
+		max-width:100%;
+		height: auto;
+		border-radius:10px;
+		object-fit:cover;
+	}
+
+	.form-content {
+		flex: 1;
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+	}
+
+	.form-content h1 {
+		font-size: 24px;
+		color: #2c3e50;
+		margin-bottom: 15px;
+	}
+
+	.form-content p {
+		font-size: 16px;
+		line-height: 1.5;
+		color: #555;
+		margin-bottom: 30px;
+	}
+
+	.input-group {
+		margin-bottom: 20px;
+	}
+
+	.input-group label i {
+		margin-right: 8px;
+		color: #007BFF;
+	}
+
+
+	input[type="text"],
+	input[type="email"],
+	input[type="number"] {
+		width: 100%;
+		padding: 10px;
+		border: 1px solid #ccc;
+		border-radius: 8px;
+		font-size: 16px;
+		margin-top: 5px;
+	}
+
+
+	.checkbox-scroll {
+		max-height: 200px;
+		overflow-y: auto;
+		border: 1px solid #ddd;
+		padding: 10px;
+		border-radius: 8px;
+		background-color: #f9f9f9;
+	}
+
+	.checkbox-scroll label {
+		display: block;
+		margin-bottom: 8px;
+	}
+
+	button[type="submit"] {
+		background-color: #007BFF;
+		color: white;
+		border: none;
+		padding: 12px 20px;
+		font-size: 16px;
+		border-radius: 8px;
+		cursor: pointer;
+		width: 100%;
+		transition: background-color 0.3s ease;
+	}
+
+	button[type="submit"]:hover {
+		background-color: #0056b3;
+	}
+
+
+
